@@ -1,0 +1,22 @@
+type Author {
+	id: ID
+	name: String
+	age: Int
+}
+
+fragment authorFields on Author {
+    id
+    name
+    age
+}
+
+# Root
+type Query {
+	findAllAuthors: [Author]
+	countAuthors: Long!
+}
+
+# Root
+type Mutation {
+	createAuthor(name: String!, age: Int): Author!
+}

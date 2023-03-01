@@ -1,0 +1,6 @@
+
+# Root
+extend type Query {
+	hello: String
+}
+
