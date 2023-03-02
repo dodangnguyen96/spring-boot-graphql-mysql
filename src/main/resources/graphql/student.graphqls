@@ -4,7 +4,7 @@ type Student {
 }
 
 # Root
-type Query {
+extend type Query {
 	students: [Student]
 }
 
